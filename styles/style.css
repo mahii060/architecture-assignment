@@ -1,0 +1,43 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* Utilities */
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* navigation */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* media queries mobile device */
+@media screen and (max-width: 576px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+    }
+}
