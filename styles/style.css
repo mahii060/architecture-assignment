@@ -89,6 +89,79 @@ nav {
     margin-bottom: 45px;
 }
 
+/*------------------
+quick feature 
+--------------------*/
+.quick-banners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.quick-feature {
+    display: flex;
+    align-items: center;
+    margin: 85px 300px 130px 300px
+}
+
+.quick-feature-description {
+    padding-left: 70px;
+}
+
+.quick-feature-description h3 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.gray {
+    color: #727272;
+    ;
+}
+
+.black-bold {
+    font-weight: 700;
+}
+
+.orange {
+    color: #FF900E;
+}
+
+.quick-feature-description p {
+    font-size: 15px;
+    color: #727272;
+}
+
+.quick-feature-description button {
+    color: #ffffff;
+    background-color: #FF900E;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+/*-------------
+Loving features
+ ----------------*/
+.loving-features {
+    display: flex;
+    margin-right: 234px;
+    margin-left: 234px;
+}
+
+.loving-feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.feauture {
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.loving-feature-banner {
+    margin-left: 140px;
+}
+
 /* media queries mobile device */
 @media screen and (max-width: 576px) {
     .navigation {
@@ -101,5 +174,13 @@ nav {
 
     .navigation-banner {
         width: 100%;
+    }
+
+    .quick-banners {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quick-feature {
+        flex-direction: column;
     }
 }
